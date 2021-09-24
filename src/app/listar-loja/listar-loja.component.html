@@ -1,0 +1,21 @@
+<p>listar-loja works!</p>
+
+
+
+<table class= "table">
+    <thead>
+    <tr>
+<th>Id</th>
+<th>Nome</th>
+<th>Credito</th>
+</tr>
+</thead>
+<tbody>
+    <tr *ngFor="let loja of lojas">
+        <td>{{ loja.idloja }}</td>
+        <td>{{ loja.nome }}</td>
+        <td>{{ loja.credito }}</td>
+   
+    </tr>
+</tbody>
+</table>

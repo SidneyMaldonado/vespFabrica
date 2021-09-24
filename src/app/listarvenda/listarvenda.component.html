@@ -1,0 +1,20 @@
+<p>listarvenda works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Idvenda</th>
+            <th>Idfuncionario</th>
+            <th>IdLoja</th>
+            <th>IdRoupa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let venda of vendas">
+            <th>{{ venda.idVenda }}</th>
+            <th>{{ venda.idFuncionario }}</th>
+            <th>{{ venda.idLoja }}</th>
+            <th>{{ venda.idRoupa }}</th>
+        </tr>
+    </tbody>
+
+</table>
