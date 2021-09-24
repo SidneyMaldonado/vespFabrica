@@ -4,15 +4,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarRoupaComponent } from './listar-roupa/listar-roupa.component';
+import { ListarSetorComponent } from './listar-setor/listar-setor.component';
+import { ListarvendaComponent } from './listarvenda/listarvenda.component';
+import { ListarLojaComponent } from './listar-loja/listar-loja.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-tecido.component';
+import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarRoupaComponent,
     ListarFuncionarioComponent,
-    ListarRoupaTecidoComponent
+    ListarRoupaTecidoComponent,
+    ListarSetorComponent,
+    ListarvendaComponent,
+    ListarLojaComponent,
+    ListarFuncionarioComponent,
+    ListarTecidoComponent
   ],
   imports: [
     BrowserModule,

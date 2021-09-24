@@ -1,0 +1,18 @@
+<p>Lista de Setores</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let setor of setores">
+            <th>{{ setor.idSetor }}</th>
+            <th>{{ setor.nome }}</th>            
+        </tr>
+    </tbody>
+
+</table>
