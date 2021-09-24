@@ -1,0 +1,25 @@
+<p>Lista de Roupas</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Preco</th>
+            <th>Medida</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let roupa of roupas">
+            <th>{{ roupa.idroupa }}</th>
+            <th>{{ roupa.nome }}</th>
+            <th>{{ roupa.preco }}</th>
+            <th>{{ roupa.medida }}</th>
+        </tr>
+    </tbody>
+
+</table>
+
+
+
