@@ -1,0 +1,30 @@
+<p>Lista de Funcionario</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>cpf</th>
+            <th>idSetor</th>
+            <th>email</th>
+            <th>salario</th>
+            <th>idFuncao</th>
+            <th>datadeContratacao</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios">
+            <th>{{ funcionario.idfuncionario }}</th>
+            <th>{{ funcionario.nome }}</th>
+            <th>{{ funcionario.cpf }}</th>
+            <th>{{ funcionario.idSetor }}</th>
+            <th>{{ funcionario.email }}</th>
+            <th>{{ funcionario.salario }}</th>
+            <th>{{ funcionario.idFuncao }}</th>
+            <th>{{ funcionario.datadeContratacao }}</th>
+        </tr>
+    </tbody>
+
+</table>
