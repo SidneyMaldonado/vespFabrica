@@ -4,11 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarRoupaComponent } from './listar-roupa/listar-roupa.component';
+import { ListarFuncaoComponent } from './listar-funcao/listar-funcao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListarRoupaComponent
+    ListarRoupaComponent,
+    ListarFuncaoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<p>listar-funcao works!</p>
+
+<table class="funcao">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcao of funcoes">
+            <th>{{ funcao.idfuncao }}</th>
+            <th>{{ funcao.nome }}</th>            
+        </tr>
+    </tbody>
+
+</table>
