@@ -11,6 +11,7 @@ import { ListarSetorComponent } from './listar-setor/listar-setor.component';
 import { ListarvendaComponent } from './listarvenda/listarvenda.component';
 import { ListarLojaComponent } from './listar-loja/listar-loja.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
+import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-tecido.component';
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 >>>>>>> 1c79aca8caef01de8df097853032a2719da6672a
 
@@ -19,8 +20,13 @@ import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
     AppComponent,
     ListarRoupaComponent,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ListarFuncaoComponent
 =======
+=======
+    ListarFuncionarioComponent,
+    ListarRoupaTecidoComponent,
+>>>>>>> d825cc4cf0e2e1187577b5c052abf82ce2630506
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,

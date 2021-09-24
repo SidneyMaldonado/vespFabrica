@@ -1,0 +1,21 @@
+<p>Lista de Roupas e Tecidos</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>IdRoupa</th>
+            <th>IdTecido</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let roupatecido of roupastecidos">
+            <th>{{ roupatecido.idRoupaTecido }}</th>
+            <th>{{ roupatecido.idRoupa }}</th>
+            <th>{{ roupatecido.idTecido }}</th>
+        </tr>
+    </tbody>
+
+</table>
