@@ -14,9 +14,16 @@ export class TecidoService {
     return this.http.get<Roupa[]>("http://localhost:8080/tecido/listar")
   }
 
+<<<<<<< HEAD
   incluir(tecido: Tecido): Observable<Tecido> {
     return this.http.post<Tecido>("http://localhost:8080/tecido/incluir", tecido);
 
 
   }
+=======
+  incluir(tecido: Tecido): Observable<Tecido>{
+      return this.http.post<Tecido>("http://localhost:8080/tecido/incluir", tecido);
+  }
+  
+>>>>>>> a944bf408f4c92dedd341ef18eb74c63ac004d82
 }

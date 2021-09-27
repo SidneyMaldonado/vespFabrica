@@ -1,28 +1,27 @@
-<p>incluir-tecido works!</p>
+<h1 class="dysplay-4 text-center">Incluir Tecido</h1>
+<div class = "container">
+     
+<form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)">
+              <div class="form-group">
 
-<div class="container">
+                <label for="nome">Nome do Tecido:</label>
+                <input type="text" name="nome" id = "nome" class="form-control" placeholder="Nome" [(ngModel)]="tecido.nome" required/>
 
-    <form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)">
+            </div>
 
-        <div class="form-group">
-            <label for="nome">Nome do Teclado:</label>
-            <input type="text" name="nome" id="name" class="form-control" placeholder="Nome" [(ngModel)]="tecido.nome"/>
+            <div class="form-group">
 
-        </div>
+                <label for="preco">Preco do Tecido:</label>
+                <input type="text" name="preco" id = "preco" class="form-control" placeholder="Preco" [(ngModel)]="tecido.preco" required/>
 
-        <div class="form-group">
-            <label for="nome">Preco do Tecido:</label>
-            <input type="text" name="preco" id="preco" class="form-control" placeholder="Preco" [(ngModel)]="tecido.preco"/>
+            </div>
 
-        </div>
+            <div class="form-group">
 
-        <div class="form-group">
-            <label for="nome">Medida do Tecido:</label>
-            <input type="text" name="medida" id="medida" class="form-control" placeholder="Medida" [(ngModel)]="tecido.medida"/>
+                <label for="medida">Medida do Tecido:</label>
+                <input type="text" name="medida" id = "medida" class="form-control" placeholder="Medida" [(ngModel)]="tecido.medida" required/>
 
-        </div>
+            </div>
+            <input type="submit" />
 
-        <input type="submit">
-
-    </form>
-</div>
+</form>

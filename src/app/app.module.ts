@@ -14,6 +14,11 @@ import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-t
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { FormsModule } from '@angular/forms';
 import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
+import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
+import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
+import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
+import { IncluirRoupaTecidoComponent } from './incluir-roupa-tecido/incluir-roupa-tecido.component';
+import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +28,17 @@ import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.componen
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,
-    ListarFuncionarioComponent,
     ListarTecidoComponent,
     ListarRoupaTecidoComponent,
+    ListarFuncionarioComponent,
+    IncluirLojaComponent,
+    IncluirSetorComponent,     
+    IncluirRoupaComponent,
+    IncluirRoupaTecidoComponent,              
+    IncluirFuncionarioComponent,
     IncluirTecidoComponent,
-    IncluirFuncaoComponent,
+    IncluirFuncaoComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,22 @@
-<p>listar-loja works!</p>
+<h1>Lista de Lojas</h1>
 
 
+<div class="col-md-6">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Credito</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let loja of lojas">
+                <td>{{ loja.idloja }}</td>
+                <td>{{ loja.nome }}</td>
+                <td>{{ loja.credito }}</td>
 
-<table class= "table">
-    <thead>
-    <tr>
-<th>Id</th>
-<th>Nome</th>
-<th>Credito</th>
-</tr>
-</thead>
-<tbody>
-    <tr *ngFor="let loja of lojas">
-        <td>{{ loja.idloja }}</td>
-        <td>{{ loja.nome }}</td>
-        <td>{{ loja.credito }}</td>
-   
-    </tr>
-</tbody>
-</table>
+            </tr>
+        </tbody>
+    </table>
+</div>
