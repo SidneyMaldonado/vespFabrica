@@ -15,9 +15,9 @@ export class TecidoService {
 
   incluir(tecido: Tecido): Observable<Tecido> {
     return this.http.post<Tecido>("http://localhost:8080/tecido/incluir", tecido);
+
+
   }
 
-  
-  
 }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Venda } from '../entities/venda';
 import { VendaService } from '../services/venda.service';
-
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-incluir-venda',
@@ -15,6 +15,14 @@ export class IncluirVendaComponent implements OnInit {
   constructor(private servicoVenda: VendaService) {}
 
   ngOnInit(): void {
+  }
+
+  incluir(frm: NgForm){
+
+    this.servicoVenda.incluir(this.venda).subscribe(
+      dados=> { alert("Tecido Cadastrado com sucesso."), console.log(dados)},
+      error=> { alert("Erro ao Cadastrar Tecido"), console.log(error) }
+    )
   }
 
  
