@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { venda } from '../entities/venda';
+import { Venda } from '../entities/venda';
 import { VendaService } from '../services/venda.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { VendaService } from '../services/venda.service';
   styleUrls: ['./listarvenda.component.css']
 })
 export class ListarvendaComponent implements OnInit {
-  vendas: venda[]=[];
+  vendas: Venda[]=[];
 
   constructor(private servicoVenda: VendaService) {
 
