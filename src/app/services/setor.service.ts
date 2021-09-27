@@ -13,5 +13,9 @@ export class SetorService {
       return this.http.get<Setor[]>("http://localhost:8080/setor/listar");
     }
 
+    incluir(setor: Setor): Observable<Setor>{
+      return this.http.post<Setor>("http://localhost:8080/setor/incluir", setor);
+  }
+
   }
 

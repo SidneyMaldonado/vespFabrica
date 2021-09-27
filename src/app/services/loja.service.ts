@@ -15,4 +15,7 @@ export class LojaService {
      return this.http.get<Loja[]>("http://localhost:8080/loja/listar");
     
   }
+  incluir(loja: Loja): Observable<Loja>{
+    return this.http.post<Loja>("http://localhost:8080/loja/incluir", loja);
+  }
 }
