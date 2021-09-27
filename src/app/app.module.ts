@@ -13,6 +13,7 @@ import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-t
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { FormsModule } from '@angular/forms';
+import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
 import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 
@@ -26,15 +27,15 @@ import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,
-<<<<<<< HEAD
     ListarFuncionarioComponent,
     ListarTecidoComponent,
     IncluirTecidoComponent,
     IncluirLojaComponent,
-    IncluirSetorComponent
-=======
-    ListarTecidoComponent
->>>>>>> 03b13ccb1bd0bc7eb3b406b5fd3d97cc6e199798
+    IncluirSetorComponent,
+    ListarTecidoComponent,      
+    IncluirRoupaComponent,
+    IncluirLojaComponent
+
   ],
   imports: [
     BrowserModule,

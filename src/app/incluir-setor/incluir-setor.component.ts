@@ -10,22 +10,22 @@ import { SetorService } from '../services/setor.service';
 })
 export class IncluirSetorComponent implements OnInit {
 
-  setor: Setor = {idSetor:0, nome:''}
+  setor: Setor = { idSetor: 0, nome: '' }
 
   constructor(private servicoSetor: SetorService) { }
 
   ngOnInit(): void {
   }
 
-  
-  incluir(frm: NgForm){
-    
+
+  incluir(frm: NgForm) {
+
     this.servicoSetor.incluir(this.setor).subscribe(
-      dados=> alert("Tecido Cadastrado com sucesso."),
-      error=> alert("Erro ao cadastrar tecido:" + error)
+      dados => alert("Setor Cadastrado com sucesso."),
+      error => alert("Erro ao cadastrar tecido:")
     )
 
-    }
+  }
 
 
 }
