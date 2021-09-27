@@ -14,6 +14,7 @@ import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { FormsModule } from '@angular/forms';
 import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
+import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
     ListarFuncionarioComponent,
     ListarTecidoComponent,
     IncluirTecidoComponent,
-    IncluirLojaComponent
+    IncluirLojaComponent,
+    IncluirSetorComponent
 =======
     ListarTecidoComponent
 >>>>>>> 03b13ccb1bd0bc7eb3b406b5fd3d97cc6e199798
