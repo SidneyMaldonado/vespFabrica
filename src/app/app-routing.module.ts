@@ -10,6 +10,7 @@ import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-t
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
+import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'listarlojas', component : ListarLojaComponent},
   {path:'listartecidos', component: ListarTecidoComponent},
   {path:'incluirtecido', component: IncluirTecidoComponent},
-  {path:'incluirroupa', component: IncluirRoupaComponent}
+  {path:'incluirroupa', component: IncluirRoupaComponent},
+  {path:'incluirfuncionario', component: IncluirFuncionarioComponent}
 ];
 
 @NgModule({
