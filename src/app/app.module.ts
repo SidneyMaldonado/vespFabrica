@@ -27,7 +27,6 @@ import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,
-    ListarFuncionarioComponent,
     ListarTecidoComponent,
     IncluirTecidoComponent,
     IncluirLojaComponent,
