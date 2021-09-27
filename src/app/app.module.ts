@@ -11,6 +11,8 @@ import { ListarLojaComponent } from './listar-loja/listar-loja.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-tecido.component';
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
+import { FormsModule } from '@angular/forms';
+import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,
-    ListarTecidoComponent
+    ListarTecidoComponent,
+    IncluirTecidoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
