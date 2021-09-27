@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { funcao } from '../entities/funcao';
+import { FuncaoService } from '../services/funcao.service';
 
 @Component({
   selector: 'app-incluir-funcao',
@@ -8,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class IncluirFuncaoComponent implements OnInit {
   
-  funcao: Funcao = {idfuncao:0, nome:''}
+  funcao: funcao = {idfuncao:0, nome:''}
 
   constructor( private servicoFuncao: FuncaoService) { }
 
@@ -17,8 +19,9 @@ export class IncluirFuncaoComponent implements OnInit {
 
   incluir(frm: NgForm) { 
     this.servicoFuncao.incluir(this.funcao).subscribe(
-   dados => alert ("Cadastrou nome com sucesso"),
-   error => alert ("Erro ao cadatrar o nome")
- )}
+      dados => alert ("Cadastrou nome com sucesso"),
+      error => alert ("Erro ao cadastrar o nome" + error)
+ )
+}
 
 }

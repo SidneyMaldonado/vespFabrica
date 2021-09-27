@@ -8,14 +8,14 @@ import { funcao } from '../entities/funcao';
 })
 export class FuncaoService {
 
-  constructor (private http: HttpClient) { }
 
+  constructor (private http: HttpClient) { }
     listar(): Observable<any> {
       return this.http.get<funcao[]>("http://localhost:8080/funcao/listar")    
   }
 
   incluir(funcao: funcao): Observable<any> {
-    throw new Error('Method not implemented.');
+    return this.http.post<funcao>("http://localhost:8080/funcao/incluir",funcao)
   }
 
 }

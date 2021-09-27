@@ -37,8 +37,7 @@ import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funci
     IncluirRoupaTecidoComponent,              
     IncluirFuncionarioComponent,
     IncluirTecidoComponent,
-    IncluirFuncaoComponent
-
+    IncluirFuncaoComponent,
   ],
   imports: [
     BrowserModule,
