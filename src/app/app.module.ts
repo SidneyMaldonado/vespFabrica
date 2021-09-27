@@ -13,6 +13,7 @@ import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-t
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { FormsModule } from '@angular/forms';
+import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
 <<<<<<< HEAD
     ListarFuncionarioComponent,
     ListarTecidoComponent,
-    IncluirTecidoComponent
+    IncluirTecidoComponent,
+    IncluirLojaComponent
 =======
     ListarTecidoComponent
 >>>>>>> 03b13ccb1bd0bc7eb3b406b5fd3d97cc6e199798
