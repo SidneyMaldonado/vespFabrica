@@ -31,10 +31,8 @@ import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funci
     ListarTecidoComponent,
     IncluirTecidoComponent,
     IncluirLojaComponent,
-    IncluirSetorComponent,
-    ListarTecidoComponent,      
+    IncluirSetorComponent,      
     IncluirRoupaComponent,
-    IncluirLojaComponent,
     IncluirFuncionarioComponent
 
   ],
