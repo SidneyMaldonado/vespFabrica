@@ -10,20 +10,20 @@ import { TecidoService } from '../services/tecido.service';
 })
 export class IncluirTecidoComponent implements OnInit {
 
-  tecido: Tecido = {idtecido:0, nome:'', preco:0, medida:0}
+  tecido : Tecido = {idtecido:0, nome:'', preco:0, medida:0}
 
   constructor(private servicoTecido: TecidoService) { }
 
   ngOnInit(): void {
   }
-
+   
   incluir(frm: NgForm){
-    
+
     this.servicoTecido.incluir(this.tecido).subscribe(
-      dados=> alert("Tecido Cadastrado com sucesso."),
-      error=> alert("Erro ao cadastrar tecido:" + error)
-    )
+      dados => alert("Tecido cadastrado com sucesso"), 
+      error => alert("Erro ao cadastrar tecido"), 
+
+      )
 
   }
-
 }
