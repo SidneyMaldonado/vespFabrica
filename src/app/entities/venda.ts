@@ -1,1 +1,6 @@
-export interface Venda{idVenda:number, idFuncionario:number, idLoja:number, idRoupa:number}
+export interface Venda{
+    idVenda:number;
+    idFuncionario:number;
+    idLoja:number;
+    idRoupa:number;
+}

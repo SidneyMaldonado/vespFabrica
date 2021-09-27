@@ -10,13 +10,7 @@ import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-t
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
-<<<<<<< HEAD
-import { IncluirRoupaTecidoComponent } from './incluir-roupa-tecido/incluir-roupa-tecido.component';
-=======
-import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
->>>>>>> 0ea62a8f9f92286883578415bddffc5f9ee82461
-import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
-import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
+import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -29,13 +23,7 @@ const routes: Routes = [
   {path:'listartecidos', component: ListarTecidoComponent},
   {path:'incluirtecido', component: IncluirTecidoComponent},
   {path:'incluirroupa', component: IncluirRoupaComponent},
-<<<<<<< HEAD
-  {path:'incluirroupatecido', component: IncluirRoupaTecidoComponent},
-=======
-  {path:'incluirfuncionario', component: IncluirFuncionarioComponent},
->>>>>>> 0ea62a8f9f92286883578415bddffc5f9ee82461
-  {path:'incluirsetor', component: IncluirSetorComponent},
-  {path:'incluirloja', component: IncluirLojaComponent}
+  {path:'incluirvenda', component: IncluirVendaComponent}
 ];
 
 @NgModule({
