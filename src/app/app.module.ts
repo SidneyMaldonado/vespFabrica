@@ -25,14 +25,10 @@ import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,
-<<<<<<< HEAD
-    ListarFuncionarioComponent,
     ListarTecidoComponent,
     IncluirTecidoComponent,
     IncluirLojaComponent
-=======
-    ListarTecidoComponent
->>>>>>> 03b13ccb1bd0bc7eb3b406b5fd3d97cc6e199798
+
   ],
   imports: [
     BrowserModule,
