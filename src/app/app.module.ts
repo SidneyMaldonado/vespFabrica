@@ -10,6 +10,8 @@ import { ListarLojaComponent } from './listar-loja/listar-loja.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-tecido.component';
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
+import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
     ListarvendaComponent,
     ListarLojaComponent,
     ListarFuncionarioComponent,
-    ListarTecidoComponent
+    ListarTecidoComponent,
+    IncluirTecidoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
