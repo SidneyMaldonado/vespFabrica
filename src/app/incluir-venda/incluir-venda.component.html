@@ -1,1 +1,23 @@
-<p>incluir-venda works!</p>
+<p>incluir-venda</p>
+
+<div class="container"> 
+
+
+    <form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)">
+        <div class="form-group">
+            <label for="nome">Id do Funcionario:</label>
+            <input type="text" name="idFuncionario" id="idFuncionario" class="form-cotrol" placeholder="idfuncionario"
+             [(ngModel)]="venda.idFuncionario" required />
+        </div>
+
+        <div class="form-group">
+            <label for="nome">Id da Loja:</label>
+            <input type="text" name="idLoja" id="idLoja" class="form-cotrol" placeholder="idloja"
+             [(ngModel)]="venda.idLoja" required />
+        </div>
+
+        <div class="form-group">
+            <label for="nome">Id do Roupa:</label>
+            <input type="text" name="idRoupa" id="idRoupa" class="form-cotrol" placeholder="idroupa"
+             [(ngModel)]="venda.idRoupa" required />
+        </div>
