@@ -12,5 +12,7 @@ export class RoupaService {
     listar(): Observable<any> {
       return this.http.get<Roupa[]>("http://localhost:8080/roupa/listar");
     }
-
+    incluir(roupa: Roupa): Observable<Roupa>{
+      return this.http.post<Roupa>("http://localhost:8080/roupa/incluir", roupa);
+  }
 }

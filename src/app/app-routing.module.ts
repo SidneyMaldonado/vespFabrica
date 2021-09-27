@@ -9,7 +9,7 @@ import { ListarFuncionarioComponent } from './listar-funcionario/listar-funciona
 import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-tecido.component';
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
-
+import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -20,7 +20,8 @@ const routes: Routes = [
   {path:'listarvendas', component: ListarvendaComponent}, 
   {path:'listarlojas', component : ListarLojaComponent},
   {path:'listartecidos', component: ListarTecidoComponent},
-  {path:'incluirtecido', component: IncluirTecidoComponent}
+  {path:'incluirtecido', component: IncluirTecidoComponent},
+  {path:'incluirroupa', component: IncluirRoupaComponent}
 ];
 
 @NgModule({

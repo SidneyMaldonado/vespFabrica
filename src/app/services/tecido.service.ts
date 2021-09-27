@@ -18,5 +18,7 @@ export class TecidoService {
     return this.http.post<Tecido>("http://localhost:8080/tecido/incluir", tecido);
   }
 
+  
+  
 }
 
