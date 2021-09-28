@@ -10,13 +10,17 @@ import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-t
 import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
-import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
 import { IncluirRoupaTecidoComponent } from './incluir-roupa-tecido/incluir-roupa-tecido.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
+import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
 import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
 import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
+import { AlterarSetorComponent } from './alterar-setor/alterar-setor.component';
+import { AlterarFuncionarioComponent } from './alterar-funcionario/alterar-funcionario.component';
+import { AlterarFuncaoComponent } from './alterar-funcao/alterar-funcao.component';
+import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -29,13 +33,21 @@ const routes: Routes = [
   {path:'listartecidos', component: ListarTecidoComponent},
   {path:'incluirtecido', component: IncluirTecidoComponent},
   {path:'incluirroupa', component: IncluirRoupaComponent},
-  {path:'incluirvenda', component: IncluirVendaComponent},
   {path:'incluirroupatecido', component: IncluirRoupaTecidoComponent},
   {path:'incluirfuncionario', component: IncluirFuncionarioComponent},
   {path:'incluirsetor', component: IncluirSetorComponent},
   {path:'incluirloja', component: IncluirLojaComponent},
   {path:'incluirfuncao', component: IncluirFuncaoComponent},
-  {path:'alterartecido/id:', component: AlterarTecidoComponent}
+  {path:'alterartecido/id:', component: AlterarTecidoComponent},
+  {path:'alterarsetor/:id', component: AlterarSetorComponent}, 
+  {path:'alterarroupa/:id', component: AlterarRoupaComponent},
+  {path:'incluirfuncao', component: IncluirFuncaoComponent},
+  {path:'alterarfuncionario/:id',component: AlterarFuncionarioComponent},
+  {path:'incluirfuncao', component: IncluirFuncaoComponent},  
+  {path:'alterarfuncao', component: AlterarFuncaoComponent},
+  {path:'alterartecido/:id', component: AlterarTecidoComponent},
+  {path:'alterarloja/:id', component: AlterarLojaComponent }
+  
 ];
 
 @NgModule({

@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { Tecido } from '../entities/tecido';
 import { TecidoService } from '../services/tecido.service';
+=======
+import { Component, OnInit } from "@angular/core"
+import { NgForm } from "@angular/forms"
+import { ActivatedRoute } from "@angular/router"
+import { Tecido } from "../entities/tecido"
+import { TecidoService } from "../services/tecido.service"
+
+>>>>>>> dacf2be552d45533b13f9b65818fff41216b8326
 
 @Component({
   selector: 'app-alterar-tecido',
@@ -10,6 +19,7 @@ import { TecidoService } from '../services/tecido.service';
   styleUrls: ['./alterar-tecido.component.css']
 })
 export class AlterarTecidoComponent implements OnInit {
+<<<<<<< HEAD
   
   tecido!: Tecido
 
@@ -36,3 +46,26 @@ export class AlterarTecidoComponent implements OnInit {
   }
 
 }
+=======
+
+  tecido!: Tecido
+
+  constructor(private servicoTecido: TecidoService) { }
+
+  ngOnInit(): void {
+
+    this.servicoTecido.consultar( )
+
+  }
+
+  alterar(frm:NgForm){
+
+    this.servicoTecido.incluir(this.tecido).subscribe(
+      dados=> { alert("Tecido Cadastrado com sucesso."), console.log(dados)},
+      error=> { alert("Erro ao Cadastrar Tecido"), console.log(error) }
+      )
+    }
+  }
+  
+
+>>>>>>> dacf2be552d45533b13f9b65818fff41216b8326

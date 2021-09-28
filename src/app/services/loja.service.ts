@@ -8,14 +8,25 @@ import { Observable } from 'rxjs';
 })
 export class LojaService {
 
+  rotaBase: String = "http://localhost:8080/loja"
+
   constructor(private http: HttpClient) { }
 
   listar(): Observable<any>{
 
-     return this.http.get<Loja[]>("http://localhost:8080/loja/listar");
+     return this.http.get<Loja[]>(`${this.rotaBase}/listar`);
     
   }
+
   incluir(loja: Loja): Observable<Loja>{
-    return this.http.post<Loja>("http://localhost:8080/loja/incluir", loja);
+    return this.http.post<Loja>(`${this.rotaBase}/incluir`, loja);
+  }
+
+  alterar(loja: Loja): Observable<Loja>{
+    return this.http.post<Loja>(`${this.rotaBase}/alterar`, loja)
+  }
+
+  consultar(id: number): Observable<Loja>{
+    return this.http.get<Loja>(`${this.rotaBase}/${id}`)
   }
 }
