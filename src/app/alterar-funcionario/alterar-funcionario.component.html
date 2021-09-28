@@ -1,0 +1,51 @@
+<h1 class="display-4 text-center">Alterar Funcionario</h1>
+
+
+<div class="container">
+    <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
+        <div class="form-group">
+            <label for="Nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"
+                [(ngModel)]="funcionario.nome" required value="{{funcionario.nome}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF" [(ngModel)]="funcionario.cpf"
+                required value="{{funcionario.cpf}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="setor">ID do Setor</label>
+            <input type="number" name="idSetor" id="setor" class="form-control" placeholder="Id do Setor"
+                [(ngModel)]="funcionario.idSetor" required value="{{funcionario.idSetor}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="Email"
+                [(ngModel)]="funcionario.email" required value="{{funcionario.email}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="salario">Salario</label>
+            <input type="number" step=0.01 min=0 name="salario" id="salario" class="form-control" placeholder="Salario"
+                [(ngModel)]="funcionario.salario" required value="{{funcionario.salario}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="idFuncao">Id da Função</label>
+            <input type="number" name="idFuncao" id="idFuncao" class="form-control" placeholder="Id da Funcao"
+                [(ngModel)]="funcionario.idFuncao" required value="{{funcionario.idFuncao}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="dataDeContratação">Data de Contratação</label>
+            <input type="date" name="datadeContratação" id="dataDeContratação" class="form-control"
+             [(ngModel)]="funcionario.datadeContratacao" required value="{{funcionario.datadeContratacao}}"/>
+        </div>
+       
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+
+    </form>
+</div>

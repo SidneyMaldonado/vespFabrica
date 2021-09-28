@@ -21,8 +21,10 @@ export class IncluirSetorComponent implements OnInit {
   incluir(frm: NgForm) {
 
     this.servicoSetor.incluir(this.setor).subscribe(
-      dados => alert("Setor Cadastrado com sucesso."),
-      error => alert("Erro ao cadastrar tecido:")
+      dados => alert("Setor Cadastrado com sucesso meu mestre."),
+      error => alert("Erro ao cadastrar tecido.") 
+
+
     )
 
   }

@@ -8,11 +8,22 @@ import { Observable } from 'rxjs';
 })
 export class RoupaService {
 
-    constructor( private http: HttpClient ) { }
-    listar(): Observable<any> {
-      return this.http.get<Roupa[]>("http://localhost:8080/roupa/listar");
-    }
-    incluir(roupa: Roupa): Observable<Roupa>{
-      return this.http.post<Roupa>("http://localhost:8080/roupa/incluir", roupa);
+  rotaBase: String = "http://localhost:8080/roupa"
+  constructor(private http: HttpClient) { }
+  listar(): Observable<any>{
+    return this.http.get<Roupa[]>(`${this.rotaBase}/listar`)
   }
+
+  incluir(roupa: Roupa): Observable<Roupa> {
+    return this.http.post<Roupa>(`${this.rotaBase}/incluir`, roupa);
+  }
+
+  alterar(roupa : Roupa):Observable<Roupa>{
+    return this.http.post<Roupa>(`${this.rotaBase}/alterar`, roupa);
+  }
+
+  consultar(id:Number):Observable<Roupa>{
+    return this.http.get<Roupa>(`${this.rotaBase}/${id}`);
+  }
+
 }

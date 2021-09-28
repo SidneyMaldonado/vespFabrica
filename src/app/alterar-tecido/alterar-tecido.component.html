@@ -1,26 +1,21 @@
-<p>alterar-tecido</p>
-
+<h1>Alterar Tecido</h1>
 <div class="container"> 
     <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
         <div class="form-group">
             <label for="nome">Nome do Tecido:</label>
-            <input type="text" name="nome" id="nome" class="form-cotrol" placeholder="Nome"
-             [(ngModel)]="tecido.nome" required value="{{tecido.nome}}"/>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"
+             [(ngModel)]="tecido.nome" required value="{{tecido.nome}}" />
         </div>
-
         <div class="form-group">
             <label for="preco">Preco do Tecido:</label>
-            <input type="text" name="preco" id="preco" class="form-cotrol" placeholder="Preço"
-             [(ngModel)]="tecido.preco" required value="{{tecido.preco}}"/>
+            <input type="text" name="preco" id="preco" class="form-control" placeholder="Preço"
+             [(ngModel)]="tecido.preco" required />
         </div>
-
         <div class="form-group">
             <label for="medida">Medida do Tecido:</label>
-            <input type="text" name="medida" id="medida" class="form-cotrol" placeholder="Medida"
-             [(ngModel)]="tecido.medida" required value="{{tecido.medida}}"/>/>
+            <input type="text" name="medida" id="medida" class="form-control" placeholder="Medida"
+             [(ngModel)]="tecido.medida" required />
         </div>
         <input type="submit">
     </form>    
-
-
 </div>

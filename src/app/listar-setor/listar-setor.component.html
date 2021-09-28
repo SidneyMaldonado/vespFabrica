@@ -1,6 +1,6 @@
 <h1>Lista de Setores</h1>
-
-<div class="col-md-6">
+<a class="btn btn-primary" href="incluirsetor">Incluir Setor</a>
+<div class="col-md-6"></div>
 <table class="table">
     <thead class="thead-light">
         <tr>
@@ -11,9 +11,9 @@
     <tbody>
         <tr *ngFor="let setor of setores">
             <th>{{ setor.idSetor }}</th>
-            <th>{{ setor.nome }}</th>            
+            <th>{{ setor.nome }}</th>
+            <th><a class="btn btn-primary" href="alterarsetor/{{setor.idSetor}}">alterar</a></th>            
         </tr>
     </tbody>
 
 </table>
-</div>
