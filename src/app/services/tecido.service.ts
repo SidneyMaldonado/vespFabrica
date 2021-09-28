@@ -9,6 +9,7 @@ import { Tecido } from '../entities/tecido';
 export class TecidoService {
 
   rotaBase: String = "http://localhost:8080/tecido"
+
   constructor(private http: HttpClient) { }
   listar(): Observable<any>{
     return this.http.get<Tecido[]>(`${this.rotaBase}/listar`)

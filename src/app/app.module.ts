@@ -18,8 +18,11 @@ import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
 import { IncluirRoupaTecidoComponent } from './incluir-roupa-tecido/incluir-roupa-tecido.component';
 import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
-import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
 import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
+import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
+import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
+import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
+import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,15 @@ import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
     ListarTecidoComponent,
     IncluirTecidoComponent,
     IncluirLojaComponent,
-    IncluirSetorComponent,     
+    IncluirSetorComponent,
+    IncluirFuncaoComponent,     
     IncluirRoupaComponent,
     IncluirRoupaTecidoComponent,
     IncluirFuncionarioComponent,
+    AlterarRoupaComponent,
+    IncluirVendaComponent,
     AlterarTecidoComponent,
-    AlterarRoupaComponent
-
+    AlterarLojaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+<h1 class="dysplay-4 text-center">Alterar Loja</h1>
+
+
+<div class="container">
+
+
+    <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
+
+        <div class="form-group">
+            <label for="nome">Nome da Loja</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" 
+            [(ngModel)]="loja.nome" required value="{{loja.nome}}" />
+        </div>
+
+        <div class="form-group">
+            <label for="credito">Saldo de Credito</label>
+            <input type="text" name="credito" id="credito" class="form-control" placeholder="Credito"
+            [(ngModel)]="loja.credito" required />
+        </div>
+
+        <input type="submit" />
+
+
+    </form>
+
+
+</div>
