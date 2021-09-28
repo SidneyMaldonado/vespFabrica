@@ -1,14 +1,14 @@
-<p>incluir-tecido</p>
+<h1>Alterar Tecido</h1>
 
 
 <div class="container"> 
 
 
-    <form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)">
+    <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
         <div class="form-group">
             <label for="nome">Nome do Tecido:</label>
             <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"
-             [(ngModel)]="tecido.nome" required />
+             [(ngModel)]="tecido.nome" required value="{{tecido.nome}}" />
         </div>
 
         <div class="form-group">
