@@ -1,17 +1,22 @@
+<div class="container">
 <h1>Listar Funçoes</h1>
 
-<table class="funcao">
+<a class="btn btn-primary" href="incluirfuncao">incluir Funcao</a>
+<table class="table">
     <thead>
         <tr>
             <th>Id</th>
-            <th>Nome</th>            
+            <th>Nome</th>     
+            <th></th>       
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let funcao of funcoes">
-            <th>{{ funcao.idfuncao }}</th>
-            <th>{{ funcao.nome }}</th>            
+            <th>{{ funcao.idFuncao }}</th>
+            <th>{{ funcao.nome }}</th>
+            <td><a class="btn btn-primary" href="alterarfuncao/{{funcao.idFuncao}}">Alterar</a></td>            
         </tr>
     </tbody>
 
 </table>
+</div>

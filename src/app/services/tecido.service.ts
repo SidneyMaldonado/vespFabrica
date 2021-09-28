@@ -9,9 +9,6 @@ import { RoupaService } from './roupa.service';
   providedIn: 'root'
 })
 export class TecidoService {
-  consultar() {
-    throw new Error('Method not implemented.');
-  }
 
   rotaBase: String = "http://localhost:8080/tecido"
 
@@ -28,7 +25,7 @@ export class TecidoService {
   alterar(tecido: Tecido): Observable<Tecido> {
     return this.http.post<Tecido>(`${this.rotaBase}/alterar`, tecido)
   }
-  consulta(id: number): Observable<Tecido> {
+  consultar(id: number): Observable<Tecido> {
     return this.http.get<Tecido>(`${this.rotaBase}/${id}`)
   }
 

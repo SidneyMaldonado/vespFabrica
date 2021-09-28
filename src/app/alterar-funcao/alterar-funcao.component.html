@@ -1,1 +1,13 @@
-<p>alterar-funcao works!</p>
+<p>alterar funcao</p>
+
+<div class="container"> 
+    <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
+        <div class="form-group">
+            <label for="nome">Nome da Funcao</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" 
+            [(ngModel)]="funcao.nome" required value="{{funcao.nome}}" />
+        </div>
+        <input type="submit" />
+    </form>
+    
+</div>

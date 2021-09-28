@@ -8,10 +8,7 @@ import { funcao } from '../entities/funcao';
   providedIn: 'root'
 })
 export class FuncaoService {
-  consultar() {
-    throw new Error('Method not implemented.');
-  }
-
+  
 
   rotaBase: String = "http://localhost:8080/funcao"
 
@@ -31,7 +28,7 @@ export class FuncaoService {
 
   }
 
-  consulta(id: number): Observable<funcao> {
+  consultar(id: number): Observable<funcao> {
     return this.http.get<funcao>(`${this.rotaBase}/${id}`)
 
   }
