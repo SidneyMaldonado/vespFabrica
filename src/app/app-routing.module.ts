@@ -22,6 +22,7 @@ import { AlterarFuncionarioComponent } from './alterar-funcionario/alterar-funci
 import { AlterarFuncaoComponent } from './alterar-funcao/alterar-funcao.component';
 import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
+import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -34,6 +35,7 @@ const routes: Routes = [
   {path:'listartecidos', component: ListarTecidoComponent},
   {path:'incluirtecido', component: IncluirTecidoComponent},
   {path:'incluirroupa', component: IncluirRoupaComponent},
+  {path:'incluirvenda', component: IncluirVendaComponent},
   {path:'incluirroupatecido', component: IncluirRoupaTecidoComponent},
   {path:'incluirfuncionario', component: IncluirFuncionarioComponent},
   {path:'incluirsetor', component: IncluirSetorComponent},
