@@ -16,6 +16,8 @@ import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
 import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
 import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
+import { AlterarFuncionarioComponent } from './alterar-funcionario/alterar-funcionario.component';
+import { AlterarFuncaoComponent } from './alterar-funcao/alterar-funcao.component';
 import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
 import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 
@@ -37,8 +39,12 @@ const routes: Routes = [
   {path:'alterartecido/:id', component: AlterarTecidoComponent},
   {path:'alterarroupa/:id', component: AlterarRoupaComponent},
   {path:'incluirfuncao', component: IncluirFuncaoComponent},
-  {path:'alterartecido/:id', component: AlterarTecidoComponent},
-  {path:'alterarloja/:id', component: AlterarLojaComponent}
+  {path:'alterartecido/:id',component: AlterarTecidoComponent},
+  {path:'alterarfuncionario/:id',component: AlterarFuncionarioComponent},
+  {path:'incluirfuncao', component: IncluirFuncaoComponent},  
+  {path:'alterarfuncao', component: AlterarFuncaoComponent},
+  {path:'alterartecido/:id', component: AlterarTecidoComponent}
+  
 ];
 
 @NgModule({
