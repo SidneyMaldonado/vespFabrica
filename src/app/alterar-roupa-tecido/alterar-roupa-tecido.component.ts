@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RoupaTecidoService } from '../services/roupa-tecido.service';
 import { RoupaTecido } from '../entities/roupatecido';
 import { NgForm } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -12,12 +13,15 @@ import { NgForm } from '@angular/forms';
 export class AlterarRoupaTecidoComponent implements OnInit {
 
   roupatecido!: RoupaTecido
-  constructor(private servicoRoupaTecido: RoupaTecidoService) { }
+  constructor(private route: ActivatedRoute, private servicoRoupaTecido: RoupaTecidoService) { }
 
   ngOnInit(): void {
 
-    this.servicoRoupaTecido.consultar
-
+    const id = Number(this.route.snapshot.paramMap.get('id'))
+    this.servicoRoupaTecido.consultar( id ).subscribe(
+      dados => this.roupatecido = dados,
+      error => alert("erro ao ler roupa")
+    )
   }
 
   alterar(frm:NgForm){

@@ -8,12 +8,21 @@ import { Venda } from '../entities/venda';
 })
 export class VendaService {
 
-  constructor( private http: HttpClient ) { }
-    listar(): Observable<any> {
-      return this.http.get<Venda[]>("http://localhost:8080/venda/listar");
-    }
+  rotaBase: String = "http://localhost:8080/venda"
 
-    incluir(venda: Venda): Observable<Venda> {
-      return this.http.post<Venda>("http://localhost:8080/venda/incluir", venda);
+  constructor(private http: HttpClient) { }
+  listar(): Observable<any> {
+    return this.http.get<Venda[]>(`${this.rotaBase}/listar`)
+  }
+
+  incluir(venda: Venda): Observable<Venda> {
+    return this.http.post<Venda>(`${this.rotaBase}/incluir`, venda)
+  }
+
+    alterar(venda: Venda): Observable<Venda> {
+      return this.http.post<Venda>(`${this.rotaBase}/alterar`, venda)
+    }
+    consulta(id: number): Observable<Venda> {
+      return this.http.get<Venda>(`${this.rotaBase}/${id}`)
     }
 }
