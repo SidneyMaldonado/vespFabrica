@@ -37,7 +37,7 @@ const routes: Routes = [
   {path:'incluirsetor', component: IncluirSetorComponent},
   {path:'incluirloja', component: IncluirLojaComponent},
   {path:'incluirfuncao', component: IncluirFuncaoComponent},  
-  {path:'alterarfuncao', component: AlterarFuncaoComponent},
+  {path:'alterarfuncao/:id', component: AlterarFuncaoComponent},
   {path:'alterartecido/:id', component: AlterarTecidoComponent}
   
 ];
