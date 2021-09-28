@@ -8,6 +8,9 @@ import { Tecido } from '../entities/tecido';
   providedIn: 'root'
 })
 export class TecidoService {
+  consultar() {
+    throw new Error('Method not implemented.');
+  }
 
   rotaBase: String = "http://localhost:8080/tecido"
 

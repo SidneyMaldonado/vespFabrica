@@ -8,6 +8,9 @@ import { funcao } from '../entities/funcao';
   providedIn: 'root'
 })
 export class FuncaoService {
+  consultar() {
+    throw new Error('Method not implemented.');
+  }
 
 
   rotaBase: String = "http://localhost:8080/funcao"

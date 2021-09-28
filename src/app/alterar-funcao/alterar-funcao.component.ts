@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Tecido } from '../entities/tecido';
+import { NgForm } from '@angular/forms';
+import { funcao } from '../entities/funcao';
+import { FuncaoService } from '../services/funcao.service';
 
 @Component({
   selector: 'app-alterar-funcao',
@@ -8,7 +10,7 @@ import { Tecido } from '../entities/tecido';
 })
 export class AlterarFuncaoComponent implements OnInit {
   
-  funcao!: Funcao
+  funcao!: funcao
 
   @Input() id?:Number
 
