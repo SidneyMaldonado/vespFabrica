@@ -1,6 +1,6 @@
-<h1>Lista de Funcionario</h1>
-
-<div class="col-md-6">
+<div class="container">
+<h1 class="display-4 text-center">Lista de Funcionario</h1>
+<a class="btn btn-primary" href="incluirfuncionario/">Incluir Tecido</a>
 <table class="table">
     <thead class="thead-light">
         <tr>
@@ -12,20 +12,21 @@
             <th>salario</th>
             <th>idFuncao</th>
             <th>datadeContratacao</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let funcionario of funcionarios">
-            <th>{{ funcionario.idfuncionario }}</th>
-            <th>{{ funcionario.nome }}</th>
-            <th>{{ funcionario.cpf }}</th>
-            <th>{{ funcionario.idSetor }}</th>
-            <th>{{ funcionario.email }}</th>
-            <th>{{ funcionario.salario }}</th>
-            <th>{{ funcionario.idFuncao }}</th>
-            <th>{{ funcionario.datadeContratacao }}</th>
+            <td>{{ funcionario.idfuncionario }}</td>
+            <td>{{ funcionario.nome }}</td>
+            <td>{{ funcionario.cpf }}</td>
+            <td>{{ funcionario.idSetor }}</td>
+            <td>{{ funcionario.email }}</td>
+            <td>R${{ funcionario.salario | number: '.2'}}</td>
+            <td>{{ funcionario.idFuncao }}</td>
+            <td>{{ funcionario.datadeContratacao | date:'dd/MM/yyyy':'GMT-00:00'}}</td>
+            <td><a class="btn btn-primary" href="alterarfuncionario/{{funcionario.idfuncionario}}">Alterar</a></td>
         </tr>
     </tbody>
-
 </table>
 </div>

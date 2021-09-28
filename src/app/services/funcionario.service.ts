@@ -10,12 +10,22 @@ import { Funcionario } from '../entities/funcionario';
 export class FuncionarioService {
 
   constructor(private http: HttpClient) { }
+
+  rotaBase = "http://localhost:8080/Funcionario";
   
   listar(): Observable<any> {
-    return this.http.get<Funcionario[]>("http://localhost:8080/Funcionario/listar");
+    return this.http.get<Funcionario[]>(`${this.rotaBase}/listar`);
   }
 
   incluir(funcionario: Funcionario):Observable<any>{
-    return this.http.post<Funcionario>("http://localhost:8080/Funcionario/incluir", funcionario);
+    return this.http.post<Funcionario>(`${this.rotaBase}/incluir`, funcionario);
+  }
+
+  alterar(funcionario: Funcionario): Observable<Funcionario>{
+    return this.http.post<Funcionario>(`${this.rotaBase}/alterar`, funcionario)
+  }
+
+  consultar(id: number): Observable<Funcionario>{
+    return this.http.get<Funcionario>(`${this.rotaBase}/${id}`)
   }
 }

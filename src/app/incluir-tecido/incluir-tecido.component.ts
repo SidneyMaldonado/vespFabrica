@@ -18,7 +18,6 @@ export class IncluirTecidoComponent implements OnInit {
   }
 
   incluir(frm: NgForm){
-
     this.servicoTecido.incluir(this.tecido).subscribe(
       dados=> { alert("Tecido Cadastrado com sucesso."), console.log(dados)},
       error=> { alert("Erro ao Cadastrar Tecido"), console.log(error) }
