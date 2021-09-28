@@ -12,10 +12,11 @@
     </thead>
     <tbody>
         <tr *ngFor="let tecido of tecidos">
-            <th>{{ tecido.idtecido }}</th>
-            <th>{{ tecido.nome }}</th>
-            <th>{{ tecido.preco }}</th>
-            <th>{{ tecido.medida }}</th>
+            <td>{{ tecido.idtecido }}</td>
+            <td>{{ tecido.nome }}</td>
+            <td>{{ tecido.preco }}</td>
+            <td>{{ tecido.medida }}</td>
+            <td><a class="btn btn-primary" href="alterartecido/{{tecido.idtecido}}">Alterar</a></td>
         </tr>
     </tbody>
 

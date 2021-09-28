@@ -1,0 +1,26 @@
+<p>alterar-roupa works!</p>
+
+<div class="container"> 
+    <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
+        <div class="form-group">
+            <label for="nome">Nome da Roupa:</label>
+            <input type="text" name="nome" id="nome" class="form-cotrol" placeholder="Nome"
+             [(ngModel)]="roupa.nome" required value="{{roupa.nome}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="preco">Preco da Roupa:</label>
+            <input type="text" name="preco" id="preco" class="form-cotrol" placeholder="Preço"
+             [(ngModel)]="roupa.preco" required value="{{roupa.preco}}"/>
+        </div>
+
+        <div class="form-group">
+            <label for="medida">Medida da Roupa:</label>
+            <input type="text" name="medida" id="medida" class="form-cotrol" placeholder="Medida"
+             [(ngModel)]="roupa.medida" required value="{{roupa.medida}}"/>
+        </div>
+    
+        <input type="submit">
+    </form>  
+
+

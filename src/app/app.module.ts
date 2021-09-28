@@ -9,37 +9,38 @@ import { ListarSetorComponent } from './listar-setor/listar-setor.component';
 import { ListarvendaComponent } from './listarvenda/listarvenda.component';
 import { ListarLojaComponent } from './listar-loja/listar-loja.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
-import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { ListarRoupaTecidoComponent } from './listar-roupa-tecido/listar-roupa-tecido.component';
+import { ListarTecidoComponent } from './listar-tecido/listar-tecido.component';
 import { IncluirTecidoComponent } from './incluir-tecido/incluir-tecido.component';
 import { FormsModule } from '@angular/forms';
-import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
-import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
-import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
+import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
 import { IncluirRoupaTecidoComponent } from './incluir-roupa-tecido/incluir-roupa-tecido.component';
+import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
-import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
+import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
+import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListarRoupaComponent,
     ListarFuncaoComponent,
+    ListarFuncionarioComponent,
+    ListarRoupaTecidoComponent,
     ListarSetorComponent,
     ListarvendaComponent,
     ListarLojaComponent,
     ListarTecidoComponent,
-    ListarRoupaTecidoComponent,
-    ListarFuncionarioComponent,
-    IncluirLojaComponent,
-    IncluirRoupaComponent,
-    IncluirRoupaTecidoComponent,              
-    IncluirFuncionarioComponent,
     IncluirTecidoComponent,
-    IncluirFuncaoComponent,
-    IncluirVendaComponent,
-    IncluirSetorComponent
+    IncluirLojaComponent,
+    IncluirSetorComponent,     
+    IncluirRoupaComponent,
+    IncluirRoupaTecidoComponent,
+    IncluirFuncionarioComponent,
+    AlterarTecidoComponent,
+    AlterarRoupaComponent
+
   ],
   imports: [
     BrowserModule,
