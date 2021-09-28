@@ -1,6 +1,7 @@
 <h1>Listar Tecido</h1>
 
 <div class="col-md-6"></div>
+<a class="btn btn-primary" href="incluirtecido">incluir Tecido</a>
 <table class="table">
     <thead class="thead-light">
         <tr>
@@ -12,10 +13,13 @@
     </thead>
     <tbody>
         <tr *ngFor="let tecido of tecidos">
-            <th>{{ tecido.idtecido }}</th>
-            <th>{{ tecido.nome }}</th>
-            <th>{{ tecido.preco }}</th>
-            <th>{{ tecido.medida }}</th>
+            <td>{{ tecido.idtecido }}</td>
+            <td>{{ tecido.nome }}</td>
+            <td>{{ tecido.preco }}</td>
+            <td>{{ tecido.medida }}</td>
+            <td><a href="tecidoalterar/{{tecido.idtecido}}/td"> Alterera</a></td>
+
+            <td><a class="btn btn-primary" href="alterartecido/{{tecido.idtecido}}">Alterar</a></td>
         </tr>
     </tbody>
 
