@@ -20,8 +20,8 @@ import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
 import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
-import { AlterarSetorComponent } from './alterar-setor/alterar-setor.component';
 import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
+import { AlterarSetorComponent } from './alterar-setor/alterar-setor.component';
 import { AlterarFuncionarioComponent } from './alterar-funcionario/alterar-funcionario.component';
 import { AlterarFuncaoComponent } from './alterar-funcao/alterar-funcao.component';
 import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
@@ -49,8 +49,8 @@ import { AlterarRoupaTecidoComponent } from './alterar-roupa-tecido/alterar-roup
     AlterarRoupaComponent,
     IncluirVendaComponent,
     IncluirSetorComponent,
-    AlterarSetorComponent,
     AlterarTecidoComponent,
+    AlterarSetorComponent,
     AlterarFuncionarioComponent,
     AlterarFuncaoComponent,
     AlterarLojaComponent,

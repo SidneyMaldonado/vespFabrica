@@ -16,10 +16,10 @@ import { IncluirSetorComponent } from './incluir-setor/incluir-setor.component';
 import { IncluirLojaComponent } from './incluir-loja/incluir-loja.component';
 import { AlterarRoupaComponent } from './alterar-roupa/alterar-roupa.component';
 import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
+import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
 import { AlterarSetorComponent } from './alterar-setor/alterar-setor.component';
 import { AlterarFuncionarioComponent } from './alterar-funcionario/alterar-funcionario.component';
 import { AlterarFuncaoComponent } from './alterar-funcao/alterar-funcao.component';
-import { AlterarTecidoComponent } from './alterar-tecido/alterar-tecido.component';
 import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 import { AlterarRoupaTecidoComponent } from './alterar-roupa-tecido/alterar-roupa-tecido.component';
 
@@ -39,6 +39,7 @@ const routes: Routes = [
   {path:'incluirsetor', component: IncluirSetorComponent},
   {path:'incluirloja', component: IncluirLojaComponent},
   {path:'incluirfuncao', component: IncluirFuncaoComponent},
+  {path:'alterartecido/id:', component: AlterarTecidoComponent},
   {path:'alterarsetor/:id', component: AlterarSetorComponent}, 
   {path:'alterarroupa/:id', component: AlterarRoupaComponent},
   {path:'incluirfuncao', component: IncluirFuncaoComponent},
