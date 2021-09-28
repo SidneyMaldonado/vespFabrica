@@ -1,0 +1,20 @@
+<h1 class="dysplay-4 text-center">alterar Setor</h1>
+
+
+<div class="container">
+
+
+    <form method="POST" #frm="ngForm" (ngSubmit)="alterar(frm)">
+
+        <div class="form-group">
+            <label for="nome">Nome do setor</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" 
+            [(ngModel)]="setor.nome" required value="{{setor.nome}}" />
+        </div>
+        <input type="submit" />
+
+
+    </form>
+
+
+</div>

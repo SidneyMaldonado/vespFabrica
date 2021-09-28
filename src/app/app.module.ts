@@ -20,6 +20,7 @@ import { IncluirRoupaComponent } from './incluir-roupa/incluir-roupa.component';
 import { IncluirRoupaTecidoComponent } from './incluir-roupa-tecido/incluir-roupa-tecido.component';
 import { IncluirFuncionarioComponent } from './incluir-funcionario/incluir-funcionario.component';
 import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
+import { AlterarSetorComponent } from './alterar-setor/alterar-setor.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
     IncluirTecidoComponent,
     IncluirFuncaoComponent,
     IncluirVendaComponent,
-    IncluirSetorComponent
+    IncluirSetorComponent,
+    AlterarSetorComponent
   ],
   imports: [
     BrowserModule,
