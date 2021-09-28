@@ -12,9 +12,10 @@
     </thead>
     <tbody>
         <tr *ngFor="let roupatecido of roupastecidos">
-            <th>{{ roupatecido.idRoupaTecido }}</th>
-            <th>{{ roupatecido.idRoupa }}</th>
-            <th>{{ roupatecido.idTecido }}</th>
+            <td>{{ roupatecido.idRoupaTecido }}</td>
+            <td>{{ roupatecido.idRoupa }}</td>
+            <td>{{ roupatecido.idTecido }}</td>
+            <td><a class="btn btn-primary" href="tecidoalterar/{{roupatecido.idRoupaTecido}}/td"> alterar</a></td>
         </tr>
     </tbody>
 

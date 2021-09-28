@@ -1,0 +1,23 @@
+<p>alterar-roupa-tecido works!</p>
+
+
+<div class = "container">
+     
+    <form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)">
+                  <div class="form-group">
+    
+                    <label for="idroupa">Id da Roupa:</label>
+                    <input type="text" name="idRoupa" id = "idRoupa" class="form-control" placeholder="idroupa" [(ngModel)]="roupatecido.idRoupa" required value="{{roupatecido.idRoupa}}"/>
+    
+                </div>
+    
+                <div class="form-group">
+    
+                    <label for="idroupa">Id do Tecido:</label>
+                    <input type="text" name="idTecido" id = "idTecido" class="form-control" placeholder="idtecido" [(ngModel)]="roupatecido.idTecido" required value="{{roupatecido.idTecido}}"/>
+    
+                </div>
+      
+                <input type="submit" />
+    
+    </form>
