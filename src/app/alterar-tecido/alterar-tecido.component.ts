@@ -10,29 +10,20 @@ import { TecidoService } from '../services/tecido.service';
   styleUrls: ['./alterar-tecido.component.css']
 })
 export class AlterarTecidoComponent implements OnInit {
-  
-  tecido!: Tecido
-
-  @Input() id?:Number
-
-
-  constructor(private route:ActivatedRoute, private servicoTecido: TecidoService) { }
-
+  tecido!: Tecido  
+  @Input() id?:number
+  constructor(private route: ActivatedRoute ,private servicoTecido: TecidoService) { }
   ngOnInit(): void {
-
-    const id= Number(this.route.snapshot.paramMap.get('id'))
+    const id = Number(this.route.snapshot.paramMap.get('id'))
     this.servicoTecido.consultar(id).subscribe(
-      dados => this.tecido =dados,
-      erros => alert("erro ao ler tecido")
+      dados=> this.tecido = dados,
+      error=> alert("erro ao ler tecido")
     )
   }
-
   alterar(frm: NgForm){
-
     this.servicoTecido.alterar(this.tecido).subscribe(
       dados=> { alert("Tecido Alterado com sucesso."), console.log(dados)},
       error=> { alert("Erro ao Alterar Tecido"), console.log(error) }
     )
   }
-
 }
