@@ -26,6 +26,7 @@ import { AlterarFuncionarioComponent } from './alterar-funcionario/alterar-funci
 import { AlterarFuncaoComponent } from './alterar-funcao/alterar-funcao.component';
 import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
+import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.componen
     AlterarSetorComponent,
     AlterarFuncionarioComponent,
     AlterarFuncaoComponent,
-    AlterarLojaComponent
+    AlterarLojaComponent,
+    AlterarVendaComponent
   ],
   imports: [
     BrowserModule,
