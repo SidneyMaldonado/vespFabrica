@@ -6,13 +6,14 @@
     <form method="POST" #frm="ngForm" (ngSubmit)="incluir(frm)">
         <div class="form-group">
             <label for="nome">Nome do Funcao:</label>
-            <input type="text" name="nome" id="nome" class="form-cotrol" placeholder="Nome"
-             [(ngModel)]="tecido.nome" required />
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"
+             [(ngModel)]="funcao.nome" required />
         </div>
-        <input type=" submit">
+
+        <input type="submit" />
 
     </form>    
-
+    
 
 </div>
 

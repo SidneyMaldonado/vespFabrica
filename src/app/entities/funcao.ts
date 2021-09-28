@@ -1,4 +1,4 @@
 export interface funcao{
-    idfuncao: number;
+    idFuncao: number;
     nome: string;
 }

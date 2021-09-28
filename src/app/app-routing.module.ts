@@ -45,6 +45,8 @@ const routes: Routes = [
   {path:'incluirfuncao', component: IncluirFuncaoComponent},
   {path:'alterarfuncionario/:id',component: AlterarFuncionarioComponent},
   {path:'incluirfuncao', component: IncluirFuncaoComponent},  
+  {path:'alterarfuncao/:id', component: AlterarFuncaoComponent},
+  {path:'alterartecido/:id', component: AlterarTecidoComponent},
   {path:'alterarfuncao', component: AlterarFuncaoComponent},
   {path:'alterartecido/:id', component: AlterarTecidoComponent},
   {path:'alterarloja/:id', component: AlterarLojaComponent },
