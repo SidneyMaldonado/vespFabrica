@@ -25,6 +25,7 @@ import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 import { AlterarRoupaTecidoComponent } from './alterar-roupa-tecido/alterar-roupa-tecido.component';
 import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
 import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
+import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionario-quantidade/view-setor-funcionario-quantidade.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -56,7 +57,8 @@ const routes: Routes = [
   {path:'alterarloja/:id', component: AlterarLojaComponent },
   {path:'alterarroupatecido/:id', component: AlterarRoupaTecidoComponent},
   {path:'alterarvenda/:id', component: AlterarVendaComponent},
-  {path:'viewfuncaovendapreco', component: ViewFuncaoVendaPrecoComponent}
+  {path:'viewfuncaovendapreco', component: ViewFuncaoVendaPrecoComponent},
+  {path:'viewsetorfuncionarioquantidade', component: ViewSetorFuncionarioQuantidadeComponent}
   
 ];
 
