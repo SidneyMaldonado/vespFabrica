@@ -2,7 +2,7 @@
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ViewFuncaoVendaPreco } from '../views/viewfuncaovendapreco';
+import { ViewFuncaoVendaPreco } from '../views/ViewFuncaoVendaPreco';
 
 @Injectable({
   providedIn: 'root'

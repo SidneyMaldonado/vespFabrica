@@ -1,5 +1,5 @@
 import { ViewFuncaoVendaPrecoService } from './../services/view-funcao-venda-preco.service';
-import { ViewFuncaoVendaPreco } from './../views/viewfuncaovendapreco';
+import { ViewFuncaoVendaPreco } from '../views/ViewFuncaoVendaPreco';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
