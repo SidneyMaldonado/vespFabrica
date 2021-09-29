@@ -30,6 +30,7 @@ import { AlterarRoupaTecidoComponent } from './alterar-roupa-tecido/alterar-roup
 import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
 import { ViewFuncaoVendaPrecoComponent } from './view-funcao-venda-preco/view-funcao-venda-preco.component';
 import { ViewQuantidadeVendasSetorComponent } from './view-quantidade-vendas-setor/view-quantidade-vendas-setor.component';
+import { ViewQuantidadeTecidoComponent } from './view-quantidade-tecido/view-quantidade-tecido.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ViewQuantidadeVendasSetorComponent } from './view-quantidade-vendas-set
     AlterarRoupaTecidoComponent,
     AlterarVendaComponent,
     ViewFuncaoVendaPrecoComponent,
-    ViewQuantidadeVendasSetorComponent    
+    ViewQuantidadeVendasSetorComponent,
+    ViewQuantidadeTecidoComponent
   ],
   imports: [
     BrowserModule,
