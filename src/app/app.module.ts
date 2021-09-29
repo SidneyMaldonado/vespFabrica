@@ -28,6 +28,7 @@ import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 import { IncluirFuncaoComponent } from './incluir-funcao/incluir-funcao.component';
 import { AlterarRoupaTecidoComponent } from './alterar-roupa-tecido/alterar-roupa-tecido.component';
 import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
+import { ViewFuncaoVendaPrecoComponent } from './view-funcao-venda-preco/view-funcao-venda-preco.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
     AlterarFuncaoComponent,
     AlterarLojaComponent,
     AlterarRoupaTecidoComponent,
-    AlterarVendaComponent
+    AlterarVendaComponent,
+    ViewFuncaoVendaPrecoComponent
   ],
   imports: [
     BrowserModule,

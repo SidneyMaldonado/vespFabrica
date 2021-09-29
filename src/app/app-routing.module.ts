@@ -1,3 +1,4 @@
+import { ViewFuncaoVendaPrecoComponent } from './view-funcao-venda-preco/view-funcao-venda-preco.component';
 import { ListarRoupaComponent } from './listar-roupa/listar-roupa.component';
 import { ListarLojaComponent } from './listar-loja/listar-loja.component';
 import { NgModule, Component } from '@angular/core';
@@ -54,7 +55,8 @@ const routes: Routes = [
   {path:'alterartecido/:id', component: AlterarTecidoComponent},
   {path:'alterarloja/:id', component: AlterarLojaComponent },
   {path:'alterarroupatecido/:id', component: AlterarRoupaTecidoComponent},
-  {path:'alterarvenda/:id', component: AlterarVendaComponent}
+  {path:'alterarvenda/:id', component: AlterarVendaComponent},
+  {path:'viewfuncaovendapreco', component: ViewFuncaoVendaPrecoComponent}
   
 ];
 

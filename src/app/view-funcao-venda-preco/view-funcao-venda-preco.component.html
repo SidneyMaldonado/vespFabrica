@@ -1,0 +1,22 @@
+    <div class="container">
+        <h1>Lista de Preço por venda e Função</h1>
+       
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Função</th>     
+                    <th>Valor</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let view of viewFuncaoVendaPrecos">
+                    <th>{{ view.id }}</th>
+                    <th>{{ view.funcao }}</th>
+                    <th>{{ view.valor }}</th>
+                </tr>
+            </tbody>
+        
+        </table>
+        </div>
+        
