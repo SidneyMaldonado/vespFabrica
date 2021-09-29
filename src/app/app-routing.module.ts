@@ -27,6 +27,7 @@ import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
 import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
 import { ViewVendaLojaComponent } from './view-venda-loja/view-venda-loja.component';
 import { ViewQuantidadeVendasSetorComponent } from './view-quantidade-vendas-setor/view-quantidade-vendas-setor.component';
+import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionario-quantidade/view-setor-funcionario-quantidade.component';
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -60,7 +61,9 @@ const routes: Routes = [
   {path:'alterarvenda/:id', component: AlterarVendaComponent},
   {path:'viewfuncaovendapreco', component: ViewFuncaoVendaPrecoComponent},
   {path:'viewvendaloja', component: ViewVendaLojaComponent},  
-  {path:'viewquantidadevendassetor', component: ViewQuantidadeVendasSetorComponent}
+  {path:'viewquantidadevendassetor', component: ViewQuantidadeVendasSetorComponent},
+  {path:'viewsetorfuncionarioquantidade', component: ViewSetorFuncionarioQuantidadeComponent}
+  
 ];
 
 @NgModule({
