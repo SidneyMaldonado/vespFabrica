@@ -1,5 +1,5 @@
 export interface ViewSetorFuncionarioQuantidade{
+    idFuncionario: number;
     nome: string;
-    quantidade: number;
-    id: number;
+    quantidade: number; 
 }

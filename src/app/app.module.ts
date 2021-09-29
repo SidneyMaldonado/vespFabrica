@@ -31,6 +31,7 @@ import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
 import { ViewFuncaoVendaPrecoComponent } from './view-funcao-venda-preco/view-funcao-venda-preco.component';
 import { ViewVendaLojaComponent } from './view-venda-loja/view-venda-loja.component';
 import { ViewQuantidadeVendasSetorComponent } from './view-quantidade-vendas-setor/view-quantidade-vendas-setor.component';
+import { ViewQuantidadeTecidoComponent } from './view-quantidade-tecido/view-quantidade-tecido.component';
 import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionario-quantidade/view-setor-funcionario-quantidade.component';
 
 @NgModule({
@@ -62,6 +63,8 @@ import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionari
     AlterarRoupaTecidoComponent,
     AlterarVendaComponent,
     ViewFuncaoVendaPrecoComponent,
+    ViewQuantidadeVendasSetorComponent,
+    ViewQuantidadeTecidoComponent,
     ViewVendaLojaComponent,
     ViewQuantidadeVendasSetorComponent,    
     ViewSetorFuncionarioQuantidadeComponent
