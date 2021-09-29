@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="display-4">Quantidade de vendas por setor</h1>
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th>Setor</th>
+                <th>Quantidade</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let view of viewQuantidadeVendasSetor">
+                <td>{{ view.idSetor }}</td>
+                <td>{{ view.setor }}</td>
+                <td>{{ view.quantidade }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

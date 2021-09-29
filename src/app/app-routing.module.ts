@@ -25,7 +25,12 @@ import { AlterarLojaComponent } from './alterar-loja/alterar-loja.component';
 import { AlterarRoupaTecidoComponent } from './alterar-roupa-tecido/alterar-roupa-tecido.component';
 import { AlterarVendaComponent } from './alterar-venda/alterar-venda.component';
 import { IncluirVendaComponent } from './incluir-venda/incluir-venda.component';
+<<<<<<< HEAD
 import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionario-quantidade/view-setor-funcionario-quantidade.component';
+=======
+import { ViewQuantidadeVendasSetorService } from './services/view-quantidade-vendas-setor.service';
+import { ViewQuantidadeVendasSetorComponent } from './view-quantidade-vendas-setor/view-quantidade-vendas-setor.component';
+>>>>>>> a9c7343ad90933a3bdde3ec541d2c1315f3e1fb9
 
 const routes: Routes = [
   {path:'listarroupas', component: ListarRoupaComponent},
@@ -58,8 +63,12 @@ const routes: Routes = [
   {path:'alterarroupatecido/:id', component: AlterarRoupaTecidoComponent},
   {path:'alterarvenda/:id', component: AlterarVendaComponent},
   {path:'viewfuncaovendapreco', component: ViewFuncaoVendaPrecoComponent},
+<<<<<<< HEAD
   {path:'viewsetorfuncionarioquantidade', component: ViewSetorFuncionarioQuantidadeComponent}
   
+=======
+  {path:'viewquantidadevendassetor', component: ViewQuantidadeVendasSetorComponent}
+>>>>>>> a9c7343ad90933a3bdde3ec541d2c1315f3e1fb9
 ];
 
 @NgModule({

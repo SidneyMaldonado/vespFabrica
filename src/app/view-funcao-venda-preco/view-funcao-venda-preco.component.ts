@@ -1,5 +1,9 @@
 import { ViewFuncaoVendaPrecoService } from './../services/view-funcao-venda-preco.service';
+<<<<<<< HEAD
 import { ViewFuncaoVendaPreco } from './../views/ViewFuncaoVendaPreco';
+=======
+import { ViewFuncaoVendaPreco } from '../views/ViewFuncaoVendaPreco';
+>>>>>>> a9c7343ad90933a3bdde3ec541d2c1315f3e1fb9
 import { Component, OnInit } from '@angular/core';
 
 @Component({

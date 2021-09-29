@@ -15,15 +15,6 @@
                 required />
         </div>
 
-        <div class="form-group">
-            <label for="setor">Setor</label>
-            <select name="idSetor" id="setor" class="form-control" placeholder="Id do Setor"
-            [(ngModel)]="funcionario.idSetor" required>
-
-            <option *ngFor="let setor of setores" value="{{setor.idSetor}}"> {{setor.nome}} </option>
-
-            </select>
-        </div>
 
         <div class="form-group">
             <label for="email">E-Mail</label>
@@ -39,17 +30,21 @@
 
         <div class="form-group">
             <label for="idFuncao">Função</label>
-            <select name="idFuncao" id="idFuncao" class="form-control" placeholder="Id da Funcao"
+            <select name="idFuncao" id="idFuncao" class="form-select" placeholder="Id da Funcao"
             [(ngModel)]="funcionario.idFuncao" required>
         
                 <option *ngFor="let funcao of funcoes" value="{{funcao.idFuncao}}">{{ funcao.nome }}</option>
         
             </select>
-
-            
-
         </div>
+        <div class="form-group">
+            <label for="idSetor">Setor</label>
+        <select name="idSetor" id="setor" class ="form-select" placeholder="Id do Setor" [(ngModel)] = "funcionario.idSetor">
 
+            <option *ngFor="let setor of setores" value="{{setor.idSetor}}">{{setor.nome}}</option>
+
+        </select>
+        </div>
         <div class="form-group">
             <label for="dataDeContratação">Data de Contratação</label>
             <input type="date" name="datadeContratação" id="dataDeContratação" class="form-control"
