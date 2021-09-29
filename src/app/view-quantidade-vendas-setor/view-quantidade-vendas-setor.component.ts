@@ -16,7 +16,7 @@ export class ViewQuantidadeVendasSetorComponent implements OnInit {
   ngOnInit(): void {
     this.viewQuantidadeVendasSetorService.listar().subscribe(
       dados => this.viewQuantidadeVendasSetor = dados,
-      error => alert('Erro ao recuperar view')
+      error => alert(`Erro ao recuperar view:`)
     )
   }
 
