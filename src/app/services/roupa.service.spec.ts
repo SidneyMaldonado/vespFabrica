@@ -13,7 +13,7 @@ describe('RoupaService', () => {
       imports:[HttpClientTestingModule],
       providers: [RoupaService] });
     service = TestBed.inject(RoupaService);
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+    
   });
 
   it('should be created', () => {
