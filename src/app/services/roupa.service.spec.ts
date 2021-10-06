@@ -1,8 +1,9 @@
 import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/Testing';
+
 import { RoupaService } from './roupa.service';
 import * as $ from 'jquery'
 import { Roupa } from '../entities/roupa';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('RoupaService', () => {
   let service: RoupaService;

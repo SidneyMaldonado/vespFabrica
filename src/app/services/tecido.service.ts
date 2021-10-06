@@ -1,9 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Roupa } from '../entities/roupa';
 import { Tecido } from '../entities/tecido';
-import { RoupaService } from './roupa.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +13,7 @@ export class TecidoService {
   constructor(private http: HttpClient) { }
 
   listar(): Observable<any>{
-    return this.http.get<RoupaService[]>(`${this.rotaBase}/listar`)
+    return this.http.get<Tecido[]>(`${this.rotaBase}/listar`)
   }
 
   incluir(tecido: Tecido): Observable<Tecido> {
@@ -29,5 +27,5 @@ export class TecidoService {
     return this.http.get<Tecido>(`${this.rotaBase}/${id}`)
   }
 
-}
+  }
 

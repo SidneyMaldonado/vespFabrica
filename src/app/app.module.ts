@@ -34,6 +34,7 @@ import { ViewQuantidadeVendasSetorComponent } from './view-quantidade-vendas-set
 import { ViewRoupaTecidoComponent } from './view-roupa-tecido/view-roupa-tecido.component';
 import { ViewQuantidadeTecidoComponent } from './view-quantidade-tecido/view-quantidade-tecido.component';
 import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionario-quantidade/view-setor-funcionario-quantidade.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { ViewSetorFuncionarioQuantidadeComponent } from './view-setor-funcionari
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HttpClientTestingModule,
     FormsModule
   ],
   providers: [],
