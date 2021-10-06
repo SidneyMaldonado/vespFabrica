@@ -34,4 +34,18 @@ describe('TecidoService', () => {
         }
     });
   }); 
+
+  it('Teste de incluir do componente com BackEnd', function(doneFn) {
+    $.ajax({
+        url: 'http://localhost:8080/tecido/incluir',
+        dataType: 'json',
+        success: function (data: Tecido[], response: any) {
+            expect(data.length).toBeGreaterThanOrEqual(0)
+            doneFn();
+        },
+        error: function( data, response){
+          expect( function(){ true; } ).toThrow(new Error("Parsing is not possible"));
+        }
+    });
+  }); 
 });
