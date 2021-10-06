@@ -76,7 +76,6 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientTestingModule,
     FormsModule
   ],
   providers: [],
