@@ -1,71 +1,86 @@
-import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { inject, TestBed } from '@angular/core/testing';
 import { FuncionarioService } from './funcionario.service';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpResponse } from '@angular/common/http';
 import { Funcionario } from '../entities/funcionario';
+//import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
-describe('FuncionarioService', () => {
+
+
+describe('FuncionarioService (mockup)', () => {
   let service: FuncionarioService;
-  let httpTestingController: HttpTestingController;
+  //let httpTestingController: HttpTestingController;
   let httpClient: HttpClient
+  let Funcionarios: Funcionario[];
+  let numero: number = 0;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports:[HttpClientTestingModule],
+      imports:[HttpClientModule],
       providers:[FuncionarioService]
     });
     service = TestBed.inject(FuncionarioService);
-    httpTestingController = TestBed.inject(HttpTestingController)
-    httpClient = TestBed.inject(HttpClient)
-  });
+   // httpTestingController = TestBed.inject(HttpTestingController)
+    httpClient = TestBed.inject(HttpClient)    
+  })
+
   
   afterEach(() =>{
-    httpTestingController.verify()
+   //httpTestingController.verify()
   })
 
-  describe('#getFuncionarios',()=>{
-    let result: Funcionario[] =[]
-    it('#getFuncionarios', () => {
-      service.listar().subscribe(
-        dados => dados ,fail
-      )
 
-      const req = httpTestingController.expectOne(`http://localhost:8080/Funcionario/listar`);
-      expect(req.request.method).toEqual('GET')
-      result = req.request.body;
 
-      expect(result).toBeGreaterThan(0);
-
-      const expectedResponse = new HttpResponse(
-        { status: 200, statusText: 'OK'});
-      req.event(expectedResponse);
-
-      req.flush([])
-      
-    });
-    describe('#updateFuncionario', () => {
-      const makeUrl = `http://localhost:8080/Funcionario/alterar`;
-  
-      it('Atualizar funcionario e retornar mensagem Ok', () => {
-  
-        const updateFuncionario: Funcionario={idfuncionario:1,nome:'Matheus Tomi',cpf:'65779758093',idSetor:3,email:'matheus@gmail.com',salario:1200,idFuncao:1,datadeContratacao: new Date(2021,1,1)};
-        const message = {message:"OK"}
-
-        service.alterar(updateFuncionario).subscribe(
-          data => expect(data).toEqual(updateFuncionario),
+  describe('#getFuncionarios',()=>{    
+   
+    it('retornar os funcionarios.', () => {       
+   
+        service.listar().subscribe(
+          dados =>{numero = dados.length,expect(dados.length).toBeGreaterThan(0)},
           fail
-        );
-         
-        const req = httpTestingController.expectOne(`http://localhost:8080/Funcionario/alterar`);
-        expect(req.request.method).toEqual('POST');
-        expect(req.request.body).toEqual(updateFuncionario);
-  
-        // Expect server to return the hero after PUT
-        const expectedResponse = new HttpResponse(
-          { status: 200, statusText: 'OK', body: updateFuncionario });
-        req.event(expectedResponse);
-      });
+      );
+ 
+    });
     
-  })
+    it('retornar um funcionario', () => {
+      let id: number = 2;           
+      service.consultar(id).subscribe(
+        dados => {expect(dados.idfuncionario).toEqual(2)},
+        fail
+      )
+    })
+
 });
+
+describe('#updateFuncionario', () => {
+
+  it('Atualizar funcionario', () => {
+
+    const updateFuncionario: Funcionario={idfuncionario:2,nome:'Matheus Tomi',cpf:'65779758093',idSetor:3,email:'matheus@gmail.com',salario:1200,idFuncao:1,datadeContratacao: new Date(2021,1,1)};
+    const message = {message:"OK"}
+
+    service.alterar(updateFuncionario).subscribe(
+      data => expect(data).toEqual(updateFuncionario),
+      fail
+    );
+     
+  });
+
+})
+
+describe('#incluirFuncionario', () => {
+
+  it('Incluir funcionario', () => {
+
+    const incluirFuncionario: Funcionario={idfuncionario:2,nome:'Matheus Tomi',cpf:'65779758093',idSetor:3,email:'matheus@gmail.com',salario:1200,idFuncao:1,datadeContratacao: new Date(2021,1,1)};
+    const message = {message:"OK"}
+
+    service.incluir(incluirFuncionario).subscribe(
+      data => expect(data).toEqual(incluirFuncionario),
+      fail
+    );
+     
+  });
+
+})
+
 })

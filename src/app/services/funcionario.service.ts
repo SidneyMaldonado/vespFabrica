@@ -16,8 +16,8 @@ export class FuncionarioService {
   
   listar(): Observable<Funcionario[]> {
     return this.http.get<Funcionario[]>(`${this.rotaBase}/listar`).pipe(
-      tap(heroes => console.log(`fetched heroes`)),
-      catchError(this.handleError('getHeroes'))
+      tap(heroes => console.log(`fetched funcionarios`)),
+      catchError(this.handleError('getFuncionarios'))
     ) as Observable<Funcionario[]>;
   }
 
