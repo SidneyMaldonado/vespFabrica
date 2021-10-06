@@ -1,8 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { ThrowStmt } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Funcionario } from '../entities/funcionario';
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,11 @@ export class FuncionarioService {
 
   rotaBase = "http://localhost:8080/Funcionario";
   
-  listar(): Observable<any> {
-    return this.http.get<Funcionario[]>(`${this.rotaBase}/listar`);
+  listar(): Observable<Funcionario[]> {
+    return this.http.get<Funcionario[]>(`${this.rotaBase}/listar`).pipe(
+      tap(heroes => console.log(`fetched heroes`)),
+      catchError(this.handleError('getHeroes'))
+    ) as Observable<Funcionario[]>;
   }
 
   incluir(funcionario: Funcionario):Observable<any>{
@@ -27,5 +31,18 @@ export class FuncionarioService {
 
   consultar(id: number): Observable<Funcionario>{
     return this.http.get<Funcionario>(`${this.rotaBase}/${id}`)
+  }
+
+  
+
+  private handleError<T>(operation = 'operation') {
+    return (error: HttpErrorResponse): Observable<T> =>{
+        console.error(error);
+
+        const message = (error.error instanceof ErrorEvent) ? error.error.message : 
+        `server returned code ${error.status} with body "${error.error}"`;
+
+        throw new Error(`${operation} failed ${message}`)
+    };
   }
 }

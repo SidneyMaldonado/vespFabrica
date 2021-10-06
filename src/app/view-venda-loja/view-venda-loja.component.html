@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Lista de Venda por loja e preço</h1>
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Preço</th>     
+                <th>Loja</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let view of viewVendaLojas">
+                <th>{{ view.idVenda }}</th>
+                <th>{{ view.somaPreco }}</th>
+                <th>{{ view.loja }}</th>
+            </tr>
+        </tbody>
+    
+    </table>
+    </div>
+    

@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Lista de Quantidade de Tecidos Por Roupa</h1>
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Roupa</th>     
+                <th>Quantidade</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let view of viewQuantidadeTecidos">
+                <th>{{ view.id }}</th>
+                <th>{{ view.roupa}}</th>
+                <th>{{ view.quantidade }}</th>
+            </tr>
+        </tbody>
+    
+    </table>
+    </div>

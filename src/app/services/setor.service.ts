@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Setor } from '../entities/setor';
@@ -26,9 +26,12 @@ export class SetorService {
 
   consultar(id: number): Observable<Setor> {
     return this.http.get<Setor>(`${this.rotaBase}/${id}`)
-  }
+  } 
+
+  
+
+};
 
 
 
-}
 
