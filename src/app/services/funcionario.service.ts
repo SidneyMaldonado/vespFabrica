@@ -25,7 +25,7 @@ export class FuncionarioService {
     return this.http.post<Funcionario>(`${this.rotaBase}/incluir`, funcionario);
   }
 
-  alterar(funcionario: Funcionario): Observable<Funcionario>{
+  alterar(funcionario: Funcionario): Observable<any>{
     return this.http.post<Funcionario>(`${this.rotaBase}/alterar`, funcionario)
   }
 
