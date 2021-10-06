@@ -2,7 +2,6 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { Loja } from '../entities/loja';
 import * as $ from 'jquery'
-
 import { LojaService } from './loja.service';
 
 describe('LojaService', () => {
