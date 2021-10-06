@@ -22,4 +22,8 @@ describe('ListarTecidoComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
+  it('should get', ()=> expect(component.tecidos.length).toBeGreaterThan(0))
 });
+
+
